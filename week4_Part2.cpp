@@ -22,6 +22,12 @@ bool ReviewGuess(int guess, int randomNumber);
 
 void DisplayGameOver(int randomNumber, string name);
 
+// ******************************* Challenges
+
+
+int Cube(int number);
+
+
 int main()
 {
     // ***************************************************************************************** First Game With Funtions ****************************************************************************
@@ -37,7 +43,7 @@ int main()
 
     case g_kPlayMenu:
     {
-        
+
         PlayGame();
         break;
     }
@@ -55,6 +61,14 @@ int main()
     }
 
     }
+    // ***************************************************************************************** Challenges *********************************************************************************
+
+    int number;
+    cout << "Type the number to be cubed: ";
+    cin >> number;
+    int num = Cube(number);
+    cout << "The cube of the number is: " << num; //Calling Function
+
 }
 
 int DisplayWelcomeMessage() {
@@ -95,7 +109,7 @@ void PlayGame() {
         if (!DidGuessCorrect == false) {
             DisplayGameOver(randomNumber, name);
         }
-        
+
     }
 
 }
@@ -136,12 +150,19 @@ bool ReviewGuess(int guess, int randomNumber) {
 
         }
     }
-        
-    }
+
+}
 
 
 void DisplayGameOver(int randomNumber, string name) {
 
     cout << "Too bad " << name << " the number was " << randomNumber << endl;
     cout << "Better luck next time!" << endl;
+}
+
+// ******************************* Challenges
+
+int Cube(int number) {
+
+    return (number * number * number);
 }
