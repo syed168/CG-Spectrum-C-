@@ -1,3 +1,0 @@
-﻿  week2.cpp
-C:\Users\syed\source\repos\week2\week2\week2.cpp(68,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  week2.vcxproj -> C:\Users\syed\source\repos\week2\x64\Debug\week2.exe
